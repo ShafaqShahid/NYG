@@ -7115,13 +7115,13 @@ h6 {
  }
   @media screen and (min-width: 768px) {
     .banner {
-      height: 1150px; width: auto; } }
+      height: 1150px;  } }
       /* Media query for screens between 480px and 767px */
 @media screen and (min-width: 480px) and (max-width: 767px) {
   /* Adjust the banner height and width for smaller screens (e.g., tablets) */
   .banner {
     height: 1000px;
-    width: auto;
+ 
   }
 }
 
@@ -7129,8 +7129,7 @@ h6 {
 @media screen and (max-width: 479px) {
   /* Adjust the banner height and width for mobile screens */
   .banner {
-    height: 1200px; /* Adjust this value as needed */
-    width: auto;
+    height: 1200px; 
   }
 }
 
