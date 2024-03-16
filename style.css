@@ -7110,12 +7110,29 @@ h6 {
 
 .banner {
   background: white;
-  height: 500px; }
+  height: 400px;
+ 
+ }
   @media screen and (min-width: 768px) {
     .banner {
-      height: 950px; } }
-  .banner img {
-    max-width: 100% !important; }
+      height: 1150px; width: auto; } }
+      /* Media query for screens between 480px and 767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Adjust the banner height and width for smaller screens (e.g., tablets) */
+  .banner {
+    height: 1000px;
+    width: auto;
+  }
+}
+
+/* Media query for screens smaller than 480px (typically mobile screens) */
+@media screen and (max-width: 479px) {
+  /* Adjust the banner height and width for mobile screens */
+  .banner {
+    height: 1200px; /* Adjust this value as needed */
+    width: auto;
+  }
+}
 
 .bannertext {
   font-family: "Montserrat", sans-serif;

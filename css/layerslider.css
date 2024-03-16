@@ -84,23 +84,33 @@
 	display: block !important;
 }
 
-.ls-slide > * {
-	position: absolute;
-	line-height: normal;
-	margin: 0;
-	left: 0;
-	top: 0;
-}
 
-.ls-slide .ls-bg {
-	left: 0px;
-	top: 0px;
-	transform: none !important;
-	-o-transform: none !important;
-	-ms-transform: none !important;
-	-moz-transform: none !important;
-	-webkit-transform: none !important;
-}
+
+    .ls-slide > * {
+        position: absolute;
+        line-height: normal;
+        margin: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .ls-slide .ls-bg {
+        left: 0px;
+        top: 0px;
+        transform: none !important;
+        -o-transform: none !important;
+        -ms-transform: none !important;
+        -moz-transform: none !important;
+        -webkit-transform: none !important;
+        width: 100%;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .ls-slide .ls-bg {
+            height: auto;
+        }
+    }
 
 .ls-yourlogo {
 	position: absolute;
